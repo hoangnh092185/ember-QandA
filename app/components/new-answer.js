@@ -3,6 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     saveAnswer(){
+      debugger;
       var params = {
         name: this.get('name'),
         content: this.get('content'),
@@ -10,10 +11,5 @@ export default Ember.Component.extend({
       };
       this.sendAction('saveAnswer', params);
     },
-    delete(answer){
-      if (confirm('Are you sure you want to delete this answer?')){
-        this.sendAction('destroyAnswer', answer);
-      }
-    }
   }
 });

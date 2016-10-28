@@ -11,7 +11,7 @@
 </div>
 <hr>
 <div class="jumbotron">
-  {{#each question.answers as |answer|}}
+  {{#each question.answer as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
     {{else}}
     <h4>Be the first to answer this question.</h4>
