@@ -8,9 +8,10 @@
       {{question.content}}
     </p>
   </div>
+  <button {{action 'delete' question}}>Delete this Question</button>
 </div>
 <hr>
-<div class="jumbotron">
+<div class="">
   {{#each question.answer as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
     {{else}}
