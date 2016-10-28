@@ -1,6 +1,7 @@
-<h1>Route Handler</h1>
-<h3>Add Code Below</h3>
+<h1>Hey display something</h1>
 
-{{question-tile question=question}}
-
-{{answer-tile answer=answer}}
+<div class="container">
+  {{#each model.questions as |question|}}
+  {{question-tile question=question}}
+  {{/each}}
+</div>

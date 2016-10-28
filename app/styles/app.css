@@ -1,0 +1,9 @@
+@import "ember-side-menu";
+
+.jumbotron {
+  text-align: center;
+}
+.content-left {
+  border-right: 2px solid #333;
+  text-align: left;
+}

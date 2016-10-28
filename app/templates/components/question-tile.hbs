@@ -1,6 +1,12 @@
-<div class="container">
-  <div class="row">
-    <h2>****this is question page****</h2>
-    <h3>add layout below</h3>
+
+  <div class="jumbotron row">
+      {{#link-to 'question'}}
+    <div class="col-sm-4 content-left">
+      <h4>By: {{question.name}}</h4>
+    </div>
+    <div class="col-sm-8">
+      <h1>{{question.title}}</h1>
+      <h4>{{question.content}}</h4>
+    </div>
+    {{/link-to}}
   </div>
-</div>

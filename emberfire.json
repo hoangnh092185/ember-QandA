@@ -1,4 +1,4 @@
-{"question": [{
+{"questions": [{
     "name": "Bill",
     "title": "How to create with Ember",
     "content": "Need help of getting started on develope a ember webpage."
@@ -11,7 +11,7 @@
     "title": "Need Resolve Thermal Installation",
     "content": "Need help of getting started on develope a ember webpage."
       }],
-  "answer": [{
+  "answers": [{
     "name": "William",
     "content": "Search Google for develope solutions."
     },{
