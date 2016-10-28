@@ -1,0 +1,24 @@
+{"question": [{
+    "name": "Bill",
+    "title": "How to create with Ember",
+    "content": "Need help of getting started on develope a ember webpage."
+    },{
+    "name": "Nate",
+    "title": "Can't Find Ember Bootstrap",
+    "content": "Need help of getting started on develope a ember webpage."
+    },{
+    "name": "Micheal",
+    "title": "Need Resolve Thermal Installation",
+    "content": "Need help of getting started on develope a ember webpage."
+      }],
+  "answer": [{
+    "name": "William",
+    "content": "Search Google for develope solutions."
+    },{
+    "name": "Hoang",
+    "content": "Search Google for develope solutions."
+    },{
+    "name": "Richichi",
+    "content": "Leave test sample to rest so the sample temperature to equalize."
+      }]
+}
