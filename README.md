@@ -1,7 +1,6 @@
 # Qand-a
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A simple webpage demonstrates how to add and update inputs using Ember application and cloud firebase database.
 
 ## Prerequisites
 
@@ -15,7 +14,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/hoangnh092185/ember-QandA.git>` this repository
 * `cd qand-a`
 * `npm install`
 * `bower install`
@@ -42,9 +41,10 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+## license ##
+*Licensed under the GNU General Public License v3.0*
 
-Specify what it takes to deploy your app.
+Copyright &copy; 2016 **_Nhat Hoang_**
 
 ## Further Reading / Useful Links
 
