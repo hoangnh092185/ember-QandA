@@ -24,6 +24,14 @@ export default Ember.Route.extend({
         return question.destroyRecord();
       });
       this.transitionTo('index');
+    },
+    saveUpdate(question, params){
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined){
+          question.set(key, params[key]);
+        }
+      });
+      question.save();
     }
   }
 });
