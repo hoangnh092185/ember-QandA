@@ -9,6 +9,10 @@ export default Ember.Component.extend({
       if (confirm('Are you sure you want to delete this answer?')) {
         this.sendAction('destroyAnswer', answer);
       }
+    },
+    upVote(){
+      var voteCount = parseInt(this.get('answer.rating')) + 1;  
+      this.sendAction('increaseRating', voteCount)
     }
   }
 });
