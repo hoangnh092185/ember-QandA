@@ -5,6 +5,7 @@ export default Ember.Component.extend({
     saveAnswer(){
       var params = {
         name: this.get('name'),
+        rating: 0,
         content: this.get('content'),
         question: this.get('question')
       };
