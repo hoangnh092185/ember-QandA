@@ -1,9 +1,13 @@
 <div class="container">
   <header class = "jumbotron">
     <h1>Welcome to Q and A</h1>
-    <h4>A blog community helping each other with questions.</h4>
-    {{#link-to 'index'}}Home{{/link-to}}
-    {{#link-to 'admin'}}Admin{{/link-to}}
+    <h4>A blog community helping other blogger with questions.</h4>
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav">
+            {{#link-to 'index' tagName="li"}}<a href=""><span class="nav-text">Home</span></a>{{/link-to}}
+            {{#link-to 'admin' tagName="li"}}<a href=""><span class="nav-text">Admin</span></a>{{/link-to}}
+      </ul>
+    </div>
   </header>
     {{outlet}}
   <hr>

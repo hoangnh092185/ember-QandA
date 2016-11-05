@@ -14,7 +14,16 @@ export default Ember.Route.extend({
       });
     },
     destroyAnswer(answer){
+      debugger;
       answer.destroyRecord();
+    },
+    increaseRating(answer, params){
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined){
+          answer.set(key, params[key]);
+        }
+      });
+      answer.save();
     },
     destroyQuestion(question){
       var answer_deletions = question.get('answer').map(function(answer){

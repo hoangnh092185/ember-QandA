@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   heading: Ember.computed('answer.name', 'answer.rating', function(){
-    return this.get('answer.name') + ' - ' + this.get('answer.rating')
+    return this.get('answer.rating') + ': By ' + this.get('answer.name');
   }),
   actions: {
     delete(answer) {
@@ -10,9 +10,10 @@ export default Ember.Component.extend({
         this.sendAction('destroyAnswer', answer);
       }
     },
-    upVote(){
-      var voteCount = parseInt(this.get('answer.rating')) + 1;  
-      this.sendAction('increaseRating', voteCount)
+    upVote(answer){
+      var params = {
+      rating: parseInt(this.get('answer.rating')) + 1};
+      this.sendAction('increaseRating', answer, params);
     }
   }
 });

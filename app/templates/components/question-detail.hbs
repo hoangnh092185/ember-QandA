@@ -12,7 +12,7 @@
 <hr>
 <div class="">
   {{#each question.answer as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer" increaseRating="increaseRating"}}
     {{else}}
     <h4>Be the first to answer this question.</h4>
   {{/each}}
