@@ -5,7 +5,6 @@ export function answerPopularity(params) {
   console.log(question.get('answer').get('length'));
   if (question.get('answer').get('length') >= 5){
     return Ember.String.htmlSafe('<h2><span class="glyphicon glyphicon-star"></span></h2>');
-    console.log("read this");
   }
   return ;
 }
