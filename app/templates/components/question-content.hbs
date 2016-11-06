@@ -1,0 +1,6 @@
+<button  {{action 'clearList'}} >Clear List</button>
+<br>
+{{#each questionCart.questions as |question|}}
+  {{question-tile question=question}}
+  <br>
+{{/each}}
