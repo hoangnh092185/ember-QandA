@@ -10,9 +10,16 @@
   </div>
 </div>
 <hr>
+<h4>Sort : <select onchange={{action 'sortFilter'  value='target.value'}}>
+  <option value="name">Name: A-Z</option>
+  <option value="rating:desc">Rating: high/low</option>
+  <option value="date:desc">Date: New/Old</option>
+
+</select></h4>
+
 <div class="">
   {{#each sortedReviews as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer" increaseRating="increaseRating"}}
+    {{answer-date-format answer}} {{answer-tile answer=answer destroyAnswer="destroyAnswer" increaseRating="increaseRating"}}
     {{else}}
     <h4>Be the first to answer this question.</h4>
   {{/each}}

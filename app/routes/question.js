@@ -14,7 +14,6 @@ export default Ember.Route.extend({
       });
     },
     destroyAnswer(answer){
-      debugger;
       answer.destroyRecord();
     },
     increaseRating(answer, params){

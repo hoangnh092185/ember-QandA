@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  sortBy: ['rating:desc'],
+  sortBy: ['date'],
   sortedReviews: Ember.computed.sort('question.answer', 'sortBy'),
 
   actions: {
@@ -15,6 +15,9 @@ export default Ember.Component.extend({
     },
     increaseRating(answer, params){
       this.sendAction('increaseRating', answer, params);
+    },
+    sortFilter(params){
+      this.set('sortBy', [params]);
     }
   }
 });

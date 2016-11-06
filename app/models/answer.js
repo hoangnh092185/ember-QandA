@@ -4,5 +4,6 @@ export default DS.Model.extend({
   name: DS.attr(),
   content: DS.attr(),
   rating: DS.attr(),
-  question: DS.belongsTo('question', {async: true})
+  question: DS.belongsTo('question', {async: true}),
+  date: DS.attr()
 });

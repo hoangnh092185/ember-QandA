@@ -7,7 +7,8 @@ export default Ember.Component.extend({
         name: this.get('name'),
         rating: 0,
         content: this.get('content'),
-        question: this.get('question')
+        question: this.get('question'),
+        date: Date(),
       };
       this.set('name', '');
       this.set('content', '');
