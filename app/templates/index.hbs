@@ -4,7 +4,7 @@
   </div>
   <div class="">
     {{#each model.questions as |question|}}
-    {{question-tile question=question}}
+      {{answer-popularity question}}{{question-tile question=question}}
     {{/each}}
   </div>
 </div>

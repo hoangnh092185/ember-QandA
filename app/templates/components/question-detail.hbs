@@ -19,7 +19,7 @@
 
 <div class="">
   {{#each sortedReviews as |answer|}}
-    {{answer-date-format answer}} {{answer-tile answer=answer destroyAnswer="destroyAnswer" increaseRating="increaseRating"}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer" increaseRating="increaseRating"}}
     {{else}}
     <h4>Be the first to answer this question.</h4>
   {{/each}}
