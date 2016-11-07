@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 
   actions: {
     clearList(){
-      this.get('questionCart').empty()
+      this.get('questionCart').empty();
     }
   }
 });
