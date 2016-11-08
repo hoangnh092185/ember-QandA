@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  canAddToList: false,
   // model(){
   //   return Ember.RSVP.hash({
   //     questions: this.store.findAll('question'),
@@ -15,7 +16,7 @@ export default Ember.Component.extend({
 
   questionCart: Ember.inject.service(),
   canAddToList: Ember.computed('questionCart.questions.[]', function(){
-      var questionIndex = this.store.findALl('question');
+      var questionIndex = this.store.find('question');
       console.log(questionIndex);
       return this.get('questionCart').includes(questionIndex);
      }),

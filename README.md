@@ -19,6 +19,7 @@ You will need the following things properly installed on your computer.
 * `npm install`
 * `bower install`
 * `ember install ember-bootstrap`
+* `npm install moment`
 
 Also add  `app.import('bower_components/bootstrap/dist/js/bootstrap.js');` to the ember-cli-build.js on the project's main directory.
 

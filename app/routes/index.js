@@ -14,5 +14,11 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
+    // questionCart: Ember.inject.service(),
+    // canAddToList: Ember.computed('questionCart.questions.[]', function(){
+    //     var questionIndex = this.store.find('question');
+    //     console.log(questionIndex);
+    //     return this.get('questionCart').includes(questionIndex);
+    //    }),
   }
 });

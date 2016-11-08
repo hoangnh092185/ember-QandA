@@ -9,7 +9,7 @@
       <h1>{{question.title}}</h1>
     </div>
     {{/link-to}}
-    {{#if questions.canAddToList}}
+    {{#if question.canAddToList}}
       <h4>Question already added to the list</h4>
     {{else}}
       <button {{action 'addToList' question}}>Add question to list</button>
