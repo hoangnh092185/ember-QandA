@@ -2,11 +2,13 @@
   <div class="row">
     <div class="col-sm-1">
       <button {{action 'upVote' answer}}>Up Vote</button>
+      <br>
+      <h3>{{answer.rating}}</h3>
     </div>
-    <div class="col-sm-1 content-left">
+    <div class="col-sm-2 content-left">
       <h3>{{heading}}</h3>
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-7 content-left">
       <h3>{{answer.content}}</h3>
       <button {{action 'delete' answer}}>Delete</button>
     </div>

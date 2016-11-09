@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   heading: Ember.computed('answer.name', 'answer.rating', function(){
-    return this.get('answer.rating') + ': By ' + this.get('answer.name');
+    return ': By ' + this.get('answer.name');
   }),
   actions: {
     delete(answer) {
