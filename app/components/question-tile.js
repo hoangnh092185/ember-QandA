@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  canAddToList: false,
   // model(){
   //   return Ember.RSVP.hash({
   //     questions: this.store.findAll('question'),
