@@ -5,11 +5,6 @@
   <div class="">
     {{#each model.questions as |question|}}
       {{question-tile question=question}}
-      <!-- {{#if question.canAddToList}}
-        <h4>Question already added to the list</h4>
-      {{else}}
-        <button {{action 'addToList' question}}>Add question to list</button>
-      {{/if}} -->
     {{/each}}
   </div>
   <hr>

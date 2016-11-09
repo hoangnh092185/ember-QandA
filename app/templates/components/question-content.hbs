@@ -1,6 +1,15 @@
 <button  {{action 'clearList'}} >Clear List</button>
 <br>
 {{#each questionCart.questions as |question|}}
-  {{question-tile question=question}}
-  <br>
+<div class="jumbotron row">
+    {{#link-to 'question' question.id}}
+  <div class="col-sm-4 content-left">
+    <h4>By: {{question.name}}</h4>
+    {{answer-popularity question}}
+  </div>
+  <div class="col-sm-8">
+    <h1>{{question.title}}</h1>
+  </div>
+  {{/link-to}}
+</div>
 {{/each}}

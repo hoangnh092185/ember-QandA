@@ -10,5 +10,6 @@ export default Ember.Service.extend({
     },
     empty() {
       this.get('questions').setObjects([]);
-    }
+    },
+
   });

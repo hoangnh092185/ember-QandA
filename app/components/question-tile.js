@@ -1,27 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  // model(){
-  //   return Ember.RSVP.hash({
-  //     questions: this.store.findAll('question'),
-  //     answers: this.store.findAll('answer')
-  //   });
-  // },
-  // model(questionIndex){
-    // return this.store.findRecord('question', params.question_id);
-  //   return this.store.findAll('question');
-  // },
-  // questionIndex: this.store.findAll('question'),
+  // canAddToList: false,
 
   questionCart: Ember.inject.service(),
-  canAddToList: Ember.computed('questionCart.questions.[]', function(){
-      var questionIndex = this.store.find('question');
-      console.log(questionIndex);
-      return this.get('questionCart').includes(questionIndex);
+  canAddToList: Ember.computed('questionCart.questions.[]',function(){
+      var emptyArray = this.get('questionCart.questions.[]');
+      console.log(emptyArray.length);
+      if(emptyArray.length === 0){
+        return false;
+      }
      }),
-
   actions: {
     addToList(question){
+      this.set('canAddToList', true);
       this.get('questionCart').add(question);
     }
   }
